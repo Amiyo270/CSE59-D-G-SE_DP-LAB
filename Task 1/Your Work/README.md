@@ -390,8 +390,7 @@ Login → Search Ticket → Select Seat → Payment → Booking Confirmation
 
 ## ER Diagram
 
-<img src="Task 1/Your Work/images/c22a9e5b-b7d7-42e4-961d-ba3513ef1d99.png" alt="ER Diagram">
-
+<img src="c22a9e5b-b7d7-42e4-961d-ba3513ef1d99.png" alt="ER Diagram">
 ---
 
 ## Sequence Diagram
