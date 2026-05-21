@@ -345,9 +345,8 @@ Main entities:
 
 ### ER Diagram Image
 
-```html
-<img src="c22a9e5b-b7d7-42e4-961d-ba3513ef1d99.png" alt="ER Diagram">
-```
+<img src="images/c22a9e5b-b7d7-42e4-961d-ba3513ef1d99.png" alt="ER Diagram">
+
 
 ---
 
