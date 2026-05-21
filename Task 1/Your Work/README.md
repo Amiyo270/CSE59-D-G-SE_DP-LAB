@@ -1,3 +1,6 @@
+
+---
+
 # Software Requirements Specification (SRS)
 
 # Online Ticket Booking System
@@ -7,7 +10,7 @@
 # Preface
 
 This document provides the **Software Requirements Specification (SRS)** for the **Online Ticket Booking System**.
-It describes the functional requirements, non-functional requirements, system models, security features, and future scope of the system.
+It describes functional requirements, non-functional requirements, system models, security features, and future scope.
 
 The purpose of this document is to guide developers, testers, stakeholders, and project managers during the software development lifecycle.
 
@@ -27,9 +30,9 @@ The purpose of this document is to guide developers, testers, stakeholders, and 
 
 ## Purpose
 
-The Online Ticket Booking System is a web-based application designed to help users book tickets online easily and efficiently.
+The Online Ticket Booking System is a web-based application designed to help users book tickets online efficiently.
 
-The system allows users to:
+Users can:
 
 * Search available tickets
 * Select seats
@@ -37,13 +40,11 @@ The system allows users to:
 * Download tickets
 * View booking history
 
-The system also provides administrative features for managing events, schedules, and bookings.
+Admins can manage events, schedules, and bookings.
 
 ---
 
 ## Document Conventions
-
-The following keywords are used throughout this document:
 
 | Keyword | Meaning                 |
 | ------- | ----------------------- |
@@ -55,18 +56,18 @@ The following keywords are used throughout this document:
 
 ## Intended Audience
 
-| Audience         | Purpose                                   |
-| ---------------- | ----------------------------------------- |
-| Developers       | For system development and implementation |
-| Project Managers | For project planning and monitoring       |
-| Testers/QA Teams | For software testing and validation       |
-| Stakeholders     | For understanding business requirements   |
+| Audience         | Purpose                 |
+| ---------------- | ----------------------- |
+| Developers       | System development      |
+| Project Managers | Planning and monitoring |
+| Testers/QA Teams | Testing and validation  |
+| Stakeholders     | Business understanding  |
 
 ---
 
 ## Scope
 
-The system provides the following features:
+The system provides:
 
 * User Registration and Login
 * Ticket Search and Booking
@@ -82,8 +83,8 @@ The system provides the following features:
 ## References
 
 * IEEE SRS Documentation Standard
-* Software Engineering Documentation
-* Business Requirement Analysis Documents
+* Software Engineering Books
+* Business Requirement Documents
 
 ---
 
@@ -91,9 +92,7 @@ The system provides the following features:
 
 ## Product Perspective
 
-The Online Ticket Booking System is a standalone web application.
-
-The system may integrate with online payment services such as:
+A standalone web application that may integrate with:
 
 * bKash
 * Nagad
@@ -106,8 +105,6 @@ The system may integrate with online payment services such as:
 
 ### Ticket Management
 
-The system allows users to:
-
 * Search tickets
 * View available seats
 * Book tickets
@@ -117,53 +114,45 @@ The system allows users to:
 
 ### Seat Management
 
-The system must:
-
-* Display available and booked seats
+* Display seat availability
 * Prevent double booking
-* Update seat availability in real time
+* Real-time seat updates
 
 ---
 
 ### Payment System
 
-Users can:
-
-* Make online payments
-* Receive payment confirmation
-* Download payment invoices
+* Online payment processing
+* Payment confirmation
+* Invoice generation
 
 ---
 
 ### Notification System
 
-The system sends notifications for:
-
 * Booking confirmation
 * Payment success
-* Ticket cancellation
+* Cancellation alerts
 * Event reminders
 
 ---
 
 ### Admin Management
 
-The admin can:
-
-* Add or remove events
+* Add/remove events
 * Manage schedules
 * Monitor bookings
 * Generate reports
 
 ---
 
-# 3. User Classes and Characteristics
+# 3. User Classes
 
-| User Type | Description                   |
-| --------- | ----------------------------- |
-| Admin     | Manages the entire system     |
-| Customer  | Searches and books tickets    |
-| Manager   | Monitors bookings and reports |
+| User     | Description         |
+| -------- | ------------------- |
+| Admin    | Full system control |
+| Customer | Book tickets        |
+| Manager  | Monitor reports     |
 
 ---
 
@@ -171,182 +160,148 @@ The admin can:
 
 ## Platform
 
-* Web-based Application
+* Web-based system
 
-## Browser Support
+## Browsers
 
-* Google Chrome
-* Mozilla Firefox
-* Microsoft Edge
+* Chrome
+* Firefox
+* Edge
 
 ## Database
 
-The system may use:
-
-* MySQL
-* MongoDB
+* MySQL / MongoDB
 
 ---
 
-# 5. Design and Implementation Constraints
+# 5. Design Constraints
 
-The system must:
-
-* Use secure payment gateways
-* Support real-time seat updates
-* Maintain scalable architecture
-* Follow data protection and security standards
+* Secure payment gateway required
+* Real-time seat updates
+* Scalable architecture
+* Data protection compliance
 
 ---
 
-# 6. Assumptions and Dependencies
+# 6. Assumptions
 
 ## Assumptions
 
-* Users must have internet access
-* Payment gateway services must remain operational
+* Internet connection required
+* Payment gateway always available
 
 ## Dependencies
 
-* Cloud Hosting Service
-* Payment Gateway APIs
-* Email/SMS Notification Services
+* Cloud hosting
+* Payment APIs
+* Email/SMS services
 
 ---
 
 # 7. Functional Requirements
 
-# 7.1 User Authentication
+## 7.1 User Authentication
 
-The system must allow users to:
-
-* Register accounts
-* Log in and log out
-* Reset passwords
-
-The system must support role-based authentication.
+* Register account
+* Login/logout
+* Reset password
+* Role-based access
 
 ---
 
-# 7.2 Ticket Booking
+## 7.2 Ticket Booking
 
-Users must be able to:
-
-* Search events/movies
-* Select dates and times
+* Search events
+* Select date/time
 * Choose seats
-* Confirm bookings
+* Confirm booking
 
 ---
 
-# 7.3 Seat Management
+## 7.3 Seat Management
 
-The system must:
-
-* Display seat availability
+* Show seat availability
 * Lock booked seats
-* Prevent duplicate bookings
+* Prevent duplicate booking
 
 ---
 
-# 7.4 Payment Management
+## 7.4 Payment Management
 
-The system must:
-
-* Accept online payments
-* Verify payment transactions
-* Generate invoices and receipts
+* Online payment
+* Transaction verification
+* Invoice generation
 
 ---
 
-# 7.5 Booking History
+## 7.5 Booking History
 
-Users must be able to:
-
-* View previous bookings
+* View past bookings
 * Download tickets
-* Check booking status
+* Check status
 
 ---
 
-# 7.6 Admin Panel
+## 7.6 Admin Panel
 
-Admins must be able to:
-
-* Add/Delete events
-* Manage schedules
+* Add/delete events
 * Manage users
-* View booking reports
+* View reports
 
 ---
 
-# 7.7 Notification System
+## 7.7 Notification System
 
-The system must send alerts for:
-
-* Booking confirmations
-* Payment success
-* Ticket cancellations
-* Upcoming event reminders
+* Booking confirmation
+* Payment alerts
+* Cancellation notice
+* Event reminders
 
 ---
 
 # 8. Non-Functional Requirements
 
-# 8.1 Performance Requirements
+## 8.1 Performance
 
-* The system must support 1000+ concurrent users
-* Booking response time must be less than 2 seconds
+* 1000+ concurrent users
+* Response time < 2 seconds
 
 ---
 
-# 8.2 Security Requirements
-
-The system must implement:
+## 8.2 Security
 
 * Password encryption
-* Secure payment gateways
-* Role-based access control
+* Secure payment gateway
+* Role-based access
 
 ---
 
-# 8.3 Usability Requirements
+## 8.3 Usability
 
-The system should:
-
-* Provide a user-friendly interface
-* Support mobile responsiveness
-* Maintain simple navigation
+* Simple UI
+* Mobile responsive
+* Easy navigation
 
 ---
 
-# 8.4 Reliability Requirements
+## 8.4 Reliability
 
-The system must:
-
-* Ensure 99.9% uptime
-* Maintain automatic backup and recovery mechanisms
+* 99.9% uptime
+* Backup & recovery
 
 ---
 
-# 8.5 Maintainability Requirements
+## 8.5 Maintainability
 
-The system should:
-
-* Support modular code updates
-* Include logging and debugging features
+* Modular design
+* Logging system
 
 ---
 
-# 8.6 Portability Requirements
+## 8.6 Portability
 
-The system should support:
-
-* Windows
-* Linux
-* macOS
-
-and cloud deployment environments.
+* Windows, Linux, macOS
+* Cloud deployment
 
 ---
 
@@ -354,48 +309,24 @@ and cloud deployment environments.
 
 ## Context Diagram
 
-The context diagram shows interactions between:
-
-* Users
-* Admin
-* Payment Gateway
-* Ticket Booking System
+Users interact with system, admin manages system, payment gateway processes payments.
 
 ---
 
 ## Use Case Diagram
 
-### Customer Use Cases
-
-* Login/Register
-* Search Tickets
-* Book Tickets
-* Make Payment
-
-### Admin Use Cases
-
-* Manage Events
-* Manage Users
-* Generate Reports
+Customer: Login, Search, Book, Pay
+Admin: Manage events, users, reports
 
 ---
 
 ## Activity Diagram
 
-System workflow:
+Login → Search → Select Seat → Payment → Confirmation
 
-Login → Search Ticket → Select Seat → Payment → Booking Confirmation
-
----
-
-## ER Diagram
-
-<img src="c22a9e5b-b7d7-42e4-961d-ba3513ef1d99.png" alt="ER Diagram">
 ---
 
 ## Sequence Diagram
-
-Shows communication sequence between:
 
 User → System → Payment Gateway → Database
 
@@ -403,7 +334,7 @@ User → System → Payment Gateway → Database
 
 ## Entity Relationship (ER) Diagram
 
-Main entities include:
+Main entities:
 
 * User
 * Ticket
@@ -412,11 +343,15 @@ Main entities include:
 * Event
 * Seat
 
+### ER Diagram Image
+
+```html
+<img src="c22a9e5b-b7d7-42e4-961d-ba3513ef1d99.png" alt="ER Diagram">
+```
+
 ---
 
 ## State Diagram
-
-Ticket states:
 
 Available → Reserved → Booked → Cancelled
 
@@ -424,45 +359,33 @@ Available → Reserved → Booked → Cancelled
 
 # 10. Future Scope
 
-Future improvements may include:
-
-* Mobile Application
-* AI-based Seat Recommendations
-* QR Code Tickets
-* Live Chat Support
-* Multi-language Support
+* Mobile App
+* AI seat recommendation
+* QR code tickets
+* Live chat support
+* Multi-language support
 
 ---
 
 # 11. Appendices
 
-## Hardware Requirements
+## Hardware
 
-* Cloud Server
-* Backup Server
+* Cloud server
+* Backup server
 
----
+## Database Relations
 
-## Database Requirements
-
-The database must maintain logical relationships between:
-
-* User and Booking
-* Booking and Payment
-* Event and Ticket
+* User–Booking
+* Booking–Payment
+* Event–Ticket
 
 ---
 
 # Conclusion
 
-The Online Ticket Booking System is a secure, scalable, and user-friendly web application designed to simplify online ticket booking.
+The Online Ticket Booking System is a secure and scalable platform that enables efficient ticket booking with real-time processing, secure payments, and strong administrative control.
 
-The system provides:
-
-* Real-time booking
-* Secure payment processing
-* Seat management
-* Notification services
-* Reporting and administration tools
+---
 
 
