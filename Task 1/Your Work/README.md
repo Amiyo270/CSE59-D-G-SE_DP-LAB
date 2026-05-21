@@ -460,4 +460,4 @@ The system provides:
 * Notification services
 * Reporting and administration tools
 
-The platform can also be expanded in the future with advanced features and integrations.
+
